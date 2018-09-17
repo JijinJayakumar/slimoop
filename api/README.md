@@ -1,13 +1,8 @@
-`all Master branch commits should done by J`
+your app is here 
 
-*Plugins used*
---twig  `html templates`
---carbon `Date Time Formats`
---nette  `json and image helpers`
---intervention `image manipulation`
---eloquent `Database`
---monolog  `error log checker`
+***Plugins used***
 
-
-
-
+ - twig  `html templates`
+ - eloquent `Database`
+ - monolog  `for logs`
+ - slimpdo  ``PDO support for slim``
