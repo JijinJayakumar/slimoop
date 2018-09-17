@@ -1,17 +1,22 @@
-```Slim Object Oriented Version 0.1``  
-This is a *Development* Version , Need lot more optimisations, will update this repo soon 
 
-### Installation
+``Slim Object Oriented Version 0.1``
+This is a *Development* Version , Need lot more optimizations, will update this repo soon 
 
-##Php version >= 7.1
+## Installation
 
+
+#### php version >= 7.1
+clone this repo
 ``` git clone https://github.com/JijinJayakumar/slimoop.git   ``` 
 
-go to api folder and excecute `` composer Install ``
+go to **api**  folder 
+excecute `` composer Install `` 
 it will install all dependecy required including SLIM framework,
-DONE
 
+create a ***db*** called ***slimoop*** and dump the sql provided
 
-To access 
+DONE, 
 
-http://localhost/slimoop/v1/ YOUR ROUTE NAME 
+To access your project 
+> http://localhost/slimoop/v1/ YOUR ROUTE NAME
+
