@@ -13,4 +13,11 @@
             "": "app/Controllers"
         }
     }
-}
+},
+"config": {
+
+    "platform": {
+        "php": "7.1"
+    }
+
+},
