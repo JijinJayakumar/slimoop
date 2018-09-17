@@ -1,0 +1,16 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "monolog/monolog": "^1.23",
+        "illuminate/database": "^5.4",
+        "phpmailer/phpmailer": "^6.0",
+        "slim/twig-view": "^2.4",
+        "slim/pdo": "^1.10"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "": "app/Controllers"
+        }
+    }
+}
