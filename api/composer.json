@@ -12,12 +12,14 @@
         "psr-4": {
             "": "app/Controllers"
         }
-    }
-},
-"config": {
+    },
+    "config": {
 
     "platform": {
         "php": "7.1"
     }
 
 },
+    
+}
+
