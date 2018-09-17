@@ -18,5 +18,5 @@ create a ***db*** called ***slimoop*** and dump the sql provided
 DONE, 
 
 To access your project 
-> http://localhost/slimoop/v1/ YOUR ROUTE NAME
+> http://localhost/slimoop/api/v1/ YOUR ROUTE NAME
 
