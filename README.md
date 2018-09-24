@@ -1,5 +1,6 @@
 
 # SlimOOP - Slim Object Oriented Version
+#### Version 1.01.1 , Last updated (24-09-2018)
 
 This is a *Development* Version , Need lot more optimizations, I will update this repo soon
 ## Getting Started
@@ -135,7 +136,7 @@ We love your input! We want to make contributing to this project as easy and tra
 -   Submitting a fix
 -   Proposing new features
 -   Becoming a maintainer
-- 
+
 If you think something important is missing or should be different based on your experience, I'd love to hear it!. If you have suggestions for improving this Project, open an issue on this project.
 
 
@@ -160,3 +161,4 @@ This project is licensed under the MIT License
 ## Acknowledgments
 
 * Free time project, please share your suggestions and improvments :)
+* Will add more examples in controlers, dont fogot to check the changes

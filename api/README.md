@@ -1,8 +1,6 @@
-your app is here 
+### Version 1.01.1 , date (24-09-2018)
 
-***Plugins used***
-
- - twig  `html templates`
- - eloquent `Database`
- - monolog  `for logs`
- - slimpdo  ``PDO support for slim``
+#### Change Logs
+* added PSR4 autload 
+* minor bug fixes
+* supdated Documentation
