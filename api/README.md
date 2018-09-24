@@ -3,4 +3,4 @@
 #### Change Logs
 * added PSR4 autload 
 * minor bug fixes
-* supdated Documentation
+* updated Documentation
