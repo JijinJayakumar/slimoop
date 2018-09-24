@@ -1,9 +1,9 @@
 <?php
-namespace src\app\Middleware;
+namespace v1\src\app\Middleware;
 
 use mukto90\Ncrypt;
-use src\app\Models\User as Users;
-use src\config\Api_Controller;
+use v1\src\app\Models\User as Users;
+use v1\src\config\Api_Controller as Api_Controller ;
 
 class JAuth extends Api_Controller
 {

@@ -1,7 +1,7 @@
 <?php
 namespace src\app\Helpers;
 
-use src\app\Models\Wallet;
+use v1\src\app\Models\Wallet;
 
 class HWallet
 {

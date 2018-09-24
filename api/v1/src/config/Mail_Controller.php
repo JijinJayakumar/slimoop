@@ -1,23 +1,23 @@
 <?php
-namespace src\config;
+namespace v1\src\config;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use src\config\Api_Controller;
+use v1\src\config\Api_Controller;
 
 class Mail_Controller extends Api_Controller {
     private $sender_email;
     private $sender_email_password;
-    
+
     public function __construct() {
-       
+
         $this->sender_email          = "jjiji.....@gmail.com";
         $this->sender_email_password = '************';
         $this->sender_host           = 'smtp.gmail.com';
         $this->sender_port           = '587';
         $this->sender_name           = 'Mail test user';
         parent::__construct();
-        
+
     }
     public function send_mail($details = array()) {
         $mail = new PHPMailer(true);

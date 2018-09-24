@@ -1,6 +1,6 @@
 <?php
 
-$container = $app->getContainer(); 
+$container = $app->getContainer();
 ///////////////// DEFAULT VALUES STARTS HERE ///////////////////
 
 $container['db'] = function ($container) { //configuring DB FOR ELOQUENT, in setings s
@@ -38,20 +38,22 @@ $container['notFoundHandler'] = function ($c) { //Custom 404 ,
     };
 };
 
-$container['JAuth'] = function ($container) { //Middleware
-    return new src\app\Middleware\JAuth($container);
-};
+// $container['JAuth'] = function ($container) { //Middleware
+//     return new src\app\Middleware\JAuth($container);
+// };
 
 ///////////////// DEFAULT VALUES ENDS HERE ///////////////////
 
 ///////////////////// Custom classes STARTS here /////////////////
 //its shouldn't  be here, but ....  ,
+
+
 $container['User'] = function ($container) {
-    return new src\app\Controllers\User($container);
+    return new v1\src\app\Controllers\User($container);
 };
 $container['Wallet'] = function ($container) {
-    return new src\app\Controllers\Wallet($container);
+    return new v1\src\app\Controllers\Wallet($container);
 };
 $container['Email'] = function ($container) {
-    return new src\app\Controllers\Email($container);
+    return new v1\src\app\Controllers\Email($container);
 };

@@ -1,16 +1,28 @@
 <?php
 use \Psr\Http\Message\ServerRequestInterface as Request;
+
+use v1\src\app\models as models;
+use v1\src\app\Helpers as Helpers;
+use v1\src\config as config;
+use v1\src\app\Controllers as Controllers;
+use v1\src\app\Middleware as Middleware;
 require '../vendor/autoload.php';
 date_default_timezone_set('Asia/Kolkata'); //Africa/Lagos
 
 $settings = require 'src/config/settings.php';
 $app = new \Slim\App($settings);
 require '../jfunctions.php'; //example for cretaing global functionss
-require 'src/includes.php'; //load all model and controllers
 require 'src/dependencies.php';
 require 'src/config/Environment.php';
-$amw = new src\app\Middleware\JAuth(); //not requierd, can remove this , and from includes
+
+$amw = new Middleware\JAuth(); //not requierd, can remove this , and from includes
 
 require 'src/routes.php';
 
 $app->run();
+
+
+/*important , u need to include class folders in composer.json and
+
+composer dumpautoload
+*/

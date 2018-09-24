@@ -1,8 +1,8 @@
 <?php
-namespace src\app\Controllers;
+namespace v1\src\app\Controllers;
 
-use src\config\Api_Controller;
-use src\config\Mail_Controller;
+use v1\src\config\Api_Controller;
+use v1\src\config\Mail_Controller;
 
 
 class Email extends Api_Controller
@@ -15,7 +15,7 @@ class Email extends Api_Controller
     }
 
     public function support_email()
-    {   
+    {
 
         $userid = $this->input['userid'];
         $subject = $this->input['subject'];

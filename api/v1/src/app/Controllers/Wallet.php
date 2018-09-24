@@ -1,8 +1,8 @@
 <?php
-namespace src\app\Controllers;
+namespace v1\src\app\Controllers;
 
-use src\app\Helpers\HWallet;
-use src\config\Api_Controller;
+use v1\src\app\Helpers\HWallet;
+use v1\src\config\Api_Controller;
 
 class Wallet extends Api_Controller
 {
@@ -22,7 +22,7 @@ class Wallet extends Api_Controller
 
         }
 
-        return $this->response->withJson($wallets); 
+        return $this->response->withJson($wallets);
     }
 
 }

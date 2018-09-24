@@ -1,7 +1,7 @@
 <?php
 namespace src\app\Helpers;
 
-use src\app\Models\User as Users;
+use v1\src\app\Models\User as Users;
 
 class Helper
 {

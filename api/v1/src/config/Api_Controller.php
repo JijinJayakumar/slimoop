@@ -1,5 +1,5 @@
 <?php
-namespace src\config;
+namespace v1\src\config;
 
 class Api_Controller
 {
@@ -20,7 +20,7 @@ class Api_Controller
         $this->input = $this->request->getParsedBody();
         $this->env = $this->app['environment'];
         $this->self = $this->uri->getBaseUrl() . "" . $this->uri->getBasePath() . "/" . $this->uri->getPath();
-        $this->pdo = new \Slim\PDO\Database(DB_DSN, DB_USER, DB_PASSWORD); //PDO CONFIGRATION 
+        $this->pdo = new \Slim\PDO\Database(DB_DSN, DB_USER, DB_PASSWORD); //PDO CONFIGRATION
 
 
     }

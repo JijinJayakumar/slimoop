@@ -1,5 +1,5 @@
 <?php
-namespace src\config;
+namespace v1\src\config;
 
 /**
  * @developer you can create as much own environment variables here

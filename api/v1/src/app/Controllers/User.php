@@ -1,9 +1,9 @@
 <?php
-namespace src\app\Controllers;
+namespace v1\src\app\Controllers;
 
 use Slim\Http\UploadedFile;
-use src\app\Models\User as Users;
-use src\config\Api_Controller;
+use v1\src\app\Models\User as Users;
+use v1\src\config\Api_Controller;
 
 class User extends Api_Controller
 {
@@ -23,16 +23,16 @@ class User extends Api_Controller
 
      public function viewSingle($request, $response, $args) //to access arguments in url
     {
-        $userId=$args['id']; //from url 
+        $userId=$args['id']; //from url
         $users = Users::all('u_id', 'u_first_name', 'u_email')->where('u_id',$userId);
         return $this->response->withJson($users);
 
     }
-    
+
 
     public function fileUploadSample()
     {
-        $dir = $this->app->get('profile_pic_upload'); //accessing env variable, u can give direct folder also 
+        $dir = $this->app->get('profile_pic_upload'); //accessing env variable, u can give direct folder also
 
         $uploadedFiles = $this->request->getUploadedFiles();
 
@@ -62,7 +62,7 @@ class User extends Api_Controller
 
     }
 
-    public function moveUploadedFile($directory, UploadedFile $uploadedFile) //Helper function , use this to upload files , no need to add or change anything 
+    public function moveUploadedFile($directory, UploadedFile $uploadedFile) //Helper function , use this to upload files , no need to add or change anything
 
     {
         $extension = pathinfo($uploadedFile->getClientFilename(), PATHINFO_EXTENSION);
