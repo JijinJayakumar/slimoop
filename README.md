@@ -23,8 +23,9 @@ php version >= 7.1
 ### Installing
 
     git clone https://github.com/JijinJayakumar/slimoop.git
+    cd slimoop
     cd api
-    composer Install
+    composer install
     DONE
 To access your project
 
